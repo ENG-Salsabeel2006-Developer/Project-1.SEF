@@ -1,0 +1,661 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.header {
+    position: relative ;
+    width: 100%;
+    height: 50px ;
+    background-color: rgba(171, 142, 142, 0.7) ;
+    position: fixed ;
+    z-index: 20 ;
+}
+.header-icon {
+    font-size: 30px ;
+    color: aliceblue ;
+    float: left ;
+    margin-top: 10px ;
+    margin-left: 15px ;
+}
+.header input {
+    margin: 10px 25px ;
+    width: 250px ;
+    height: 30px ;
+    border-radius: 15px ;
+    border: 0 ;
+    padding-left: 10px ;
+}
+.header-search {
+    float: left ;
+    position: absolute ;
+    margin: 18px -260px ;
+}
+.header-links li {
+    float: right ;
+    margin-left: 30px ;
+    list-style: none ;
+    position: relative ;
+}
+.header-links {
+    margin-top: -35px ;
+    padding-right: 50px ;
+}
+.header-links a {
+    text-decoration: none ;
+    color: #fff ;
+}
+.header-links-blog {
+    width: 170px ;
+    position: absolute ;
+    margin-top: 10px ;
+    border-radius: 15px ;
+    background-color: #fff ;
+    border: 1px solid rgb(101, 93, 93) ;
+    visibility: hidden ;
+}
+.header-li-blog:hover .header-links-blog  {
+    visibility: visible ;
+}
+.header-li-blog {
+    position: relative ;
+}
+.header-links-blog a {
+    color: black ;
+} 
+.header-links-blog li {
+    padding: 15px 33px 25px 0 ; 
+}
+.website , .home , .works , .choose , .happy , .news , .team , .end , .offer {
+    width: 100% ;
+    height: 100vh ;
+}
+.home {
+    background: url(../images/WhatsApp\ Image\ 2025-08-21\ at\ 14.42.32.jpeg)  no-repeat ;
+    background-size: cover ;
+    position: relative ;
+}
+.home-overlay {
+    position: absolute ;
+}
+.home-content {
+    width: 900px ;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50%);
+    text-align: center ;
+    color: #fff ;
+}
+.home-title {
+    font-size: 70px ;
+    text-transform: uppercase ;
+}
+.home-p {
+    letter-spacing: 1.5px ;
+    margin: 20px 0 ;
+}
+.home-btn {
+    width: 150px ;
+    height: 60px ;
+    text-transform: capitalize ;
+    font-size: 20px ;
+    border-radius: 15px ;
+}
+.home-btn:hover {
+    opacity: 0.5 ;
+    cursor: pointer ;
+}
+.home-btn2 {
+    color: #fff ;
+    background-color: rgb(130, 114, 114) ;
+    margin-left: 15px ;
+}
+.welcome-To-Website , .news-main-title , .works-title , .offer-main-title , .pricing-main-title , .team-main-title {
+    text-align: center ;
+    font-size: 50px ;
+    padding-top: 25px ;
+    text-transform: capitalize ;
+}
+.welcomeToWebsite-line , .news-main-title-line , .works-title-line , .offer-main-title-line , .choose-main-title-line , .pricing-main-title-line , .team-main-title-line {
+    width: 100px ;
+    height: 3px ;
+    background-color: rgb(97, 73, 73) ;
+}
+.welcomeToWebsite-line , .news-main-title-line , .works-title-line , .offer-main-title-line , .pricing-main-title-line , .team-main-title-line {
+    margin: auto ;
+}
+.website-customizible {
+    width: 100% ;
+    margin: 25px 0px ;
+}
+.website-content {
+    width: 25% ;
+    height: 250px ;
+    border: 1px solid rgb(136, 136, 136) ;
+    float: left ;
+    text-align: center ;
+    padding: 30px 0px ;
+    margin-left: 6% ;
+    margin-top: 150px ;
+    position: relative ;
+}
+.website-icon {
+    font-size: 30px ;
+    color: rgb(119, 99, 99) ;
+}
+.website-title {
+    text-transform: capitalize ;
+    letter-spacing: 1.5px ;
+    margin: 20px 0px ;
+}
+.website-p {
+    letter-spacing: 1.5px ;
+    text-transform: capitalize ;
+    margin: 28px  3px ;
+    color: rgb(77, 77, 77) ;
+}
+.website-content a {
+    text-decoration: none ;
+    letter-spacing: 1.5px ;
+    color: rgb(119, 99, 99) ;
+} 
+.website-content::after , .offer-info::after , .team-item::after , .pricing-info::after , .news-item::after , .header-links li::after , .header-links-blog li::after {
+    position: absolute ;
+    width: 0 ;
+    height: 0 ;
+    content: "" ;
+    top: 0 ;
+    left: 0 ;
+    background-color: rgb(81, 81, 81) ;
+}
+.website-content:hover::after , .offer-info:hover::after , .team-item:hover:after , .pricing-info:hover:after , .news-item:hover::after , .header-links li:hover::after , .header-links-blog li:hover::after {
+    width: 100% ;
+    height: 100% ;
+    transition: 0.7s ;
+}
+.website-content::after , .offer-info::after , .team-item::after , .pricing-info::after , .news-item::after {
+    z-index: -1 ;
+    opacity: 0.5 ;
+}
+.website-content:hover::after , .offer-info:hover::after , .team-item:hover:after , .pricing-info:hover:after , .news-item:hover::after {
+    opacity: 0.5 ;
+}
+.header-links li::after , .header-links-blog li::after {
+    height: 1.5px ;
+    top: 25px ;
+    background-color: rgb(77, 64, 64) ;
+    visibility: hidden ;
+}
+.header-links li:hover::after , .header-links-blog li:hover::after {
+    height: 1.5px ;
+    visibility: visible ;
+} 
+.header-links-blog li::after {
+    top: 35px ;
+}
+.header-links-blog li:hover::after {
+    width: 76% ;
+}  
+.website-content:hover .website-title {
+    color: rgb(255, 255, 255) ;
+}
+.website-content:hover .website-p , .offer-info:hover .offer-p {
+    color: rgb(0, 0, 0) ;
+}
+.website-content:hover .website-icon , .offer-info:hover i {
+    color: rgb(101, 85, 85) ;
+}
+.website-content:hover .website-content a {
+    color: rgb(101, 85, 85) ;
+}
+.works-title-line , .offer-main-title-line , .team-main-title-line {
+    width: 110px ;
+    margin-top: 8px ;
+}
+.work-images {
+    width: 80% ;
+    margin: auto ;
+    margin-top: 35px ;
+    margin-left: 170px ;
+}
+.works-img {
+    width: 30% ;
+    height: 250px ;
+    margin: 1% 1% ;
+    background-size: cover ;
+    background-position: center ;
+    position: relative ;
+}  
+.works-imga1 {
+    float: left ;
+    
+    background-color: rgb(0, 0, 0) ;
+}
+.works-imga2 {
+    float: left ;
+    background-color: rgb(0, 0, 0) ;
+}
+.works-img1 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-24\ at\ 23.11.14.jpeg) ;
+}
+.works-img2 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 23.13.11.jpeg) ;
+}
+.works-img3 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-28\ at\ 17.26.28\ \(2\).jpeg) ;
+}
+.works-img4 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 23.13.07.jpeg) ;
+}
+.works-img5 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-28\ at\ 17.26.28.jpeg) ;
+}
+.works-img6 {
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-28\ at\ 17.26.28\ \(1\).jpeg) ;
+}
+.works-img-Category {
+    width: 100% ;
+    height: 100% ;
+    position: absolute ;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    text-align: center ;
+    visibility: hidden ;
+}
+.works-img:hover  .works-img-Category {
+    visibility: visible ;
+}
+.works-img-Category-title {
+    color: rgb(181, 181, 181) ;
+    text-transform: uppercase ;
+    font-size: 40px ;
+    margin: 37px 0px ;
+}
+.works-img-Category-p {
+    color: #fff ;
+    letter-spacing: 1.5px ;
+}
+.works-img-Category  a  i {
+    font-size: 25px ;
+    color: rgb(181, 181, 181) ;
+    background-color: #fff ;
+    margin: 37px 10px ;
+    border-radius: 5px ;
+}
+.offer-info {
+    width: 30% ;
+    height: 230px ;
+    border: 1px solid rgb(136, 136, 136) ;
+    padding: 30px ;
+    border-radius: 10px ;
+    margin-top: 15px ;
+    position: relative ;
+}
+.offer-info-2 {
+    margin: 14px 5% ;
+}
+.offer-International {
+    margin-top: 24px ;
+}
+.offer-info1 {
+    float: left ;
+}
+.offer-info2 {
+    float: right ;
+}
+.offer i , .offer-title {
+    display: inline ;
+}
+.offer i {
+    font-size: 30px ;
+    color: rgb(119, 99, 99) ;
+}
+.offer-p {
+    color: rgb(115, 115, 115) ;
+    margin-top: 30px ; 
+}
+.offer-title , .offer-p {
+    letter-spacing: 1.5px ;
+    
+}
+.offer-info-title-p {
+    margin: -25px 40px ;
+}
+.offer-info:hover .offer-title , .pricing-info:hover .pricing-info-main-text , .team-item:hover .team-info-work , .news-item:hover .news-more {
+    color: rgb(119, 84, 84) ;
+}
+.choose-info {
+    float: left ;
+    width: 50% ;
+    margin-left: 5% ;
+    padding: 10% 5% ;
+}
+.choose-main-title {
+    font-size: 40px ;
+    text-transform: capitalize ;
+}
+.choose-main-title-line {
+    width: 75px ;
+}
+.choose-p {
+    color: rgb(145, 145, 145) ;
+    margin: 50px 0px ;
+}
+.choose-info i {
+    padding: 16px 0px ;
+    color: rgb(97, 73, 73) ;
+    font-size: 18px ;
+}
+.choose-sentence {
+    letter-spacing: 1.5px ;
+    color: rgb(77, 77, 77) ; 
+}
+.choose-img {
+    width: 350px ;
+    height: 450px ;
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 23.13.09.jpeg) ;
+    background-size: cover ;
+    float: right ;
+    margin: 8% 10% ; 
+}
+.choose-radio {
+    float: right ;
+    padding: 3px ;
+    margin: 460px 127px 0 0 ;
+}
+.choose-radio li { 
+    width: 15px ;
+    height: 15px ;
+    border-radius: 50% ;
+    background-color: rgb(154, 154, 154) ;
+    margin-left: 10px ;
+    display: inline-block ;
+}
+.choose-img .choose-radio1 {
+    background-color: rgb(97, 97, 97) ;
+}
+.choose-radio li:hover {
+    background-color: rgb(97, 97, 97) ;
+}
+.happy {
+    overflow: auto ;
+    padding-top: 23vh ;
+}
+.happy-img {
+    width: 100% ;
+    height: 70% ;
+    background: url(../images/WhatsApp\ Image\ 2025-08-28\ at\ 17.26.29\ \(1\).jpeg) fixed ;
+    background-size: cover ;
+}
+.happy-overlay , .marketing-img-overlay , .home-overlay {
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(0, 0, 0, 0.7) ;
+}
+.happy-info {
+    float: left ;
+    margin-top: 145px ;
+    margin-left: 185px ;
+    text-align: center ;
+    color: rgb(255, 255, 255) ;
+}
+.happy-info i {
+    font-size: 35px ;
+    color: rgb(119, 99, 99) ;
+}
+.happy-info p {
+    font-size: 20px ;
+    margin: 8px 0px ;
+    letter-spacing: 1.5px ;
+}
+.pricing {
+    width: 100% ;
+    height: 100vh ;
+}
+.pricing-main-title-line {
+    width: 120px ;
+    margin-top: 8px ;
+}
+.pricing-info {
+    width: 25% ;
+    height: 450px ;
+    border: 1px solid rgb(134, 114, 114) ;
+    float: left ;
+    margin-top: 80px ;
+    margin-left: 6% ;
+    padding: 15px 0px ;
+    text-align: center ;
+    border-radius: 10px ;
+    letter-spacing: 1.5px ;
+    position: relative ;
+}
+.pricing-info-main-text {
+    text-transform: uppercase ;
+    font-size: 25px ;
+    margin: 25px 0px ;
+}
+.pricing-info-money {
+    width: 110px ;
+    height: 110px ;
+    border: 2px solid rgb(150, 132, 132) ;
+    margin: 25px 5px ;
+    border-radius: 50% ;
+    margin: auto ;
+    padding-top: 20px ;
+}
+.pricing-info-price {
+    font-size: 35px ;
+}
+.pricing-info-ml {
+    font-size: 18px ;
+}
+.pricing-info-text {
+    font-size: 20px ;
+    margin-top: 25px ;
+    text-transform: capitalize ;
+}
+.pricing-info-btn {
+    margin-top: 26px ;
+    width: 200px ;
+    height: 30px ;
+    border-radius: 15px ;
+}
+.pricing-info::after {
+    width: 100% ;
+}
+.pricing-info:hover .pricing-info-money {
+    border: 3px solid rgb(134, 114, 114) ;
+}
+.marketing {
+    width: 100% ;
+    height: 100vh ;
+    padding-top: 23vh ;
+}
+.marketing-img {
+    width: 100% ;
+    height: 70% ;
+    background: url(../images/WhatsApp\ Image\ 2025-08-28\ at\ 17.26.29\ \(2\).jpeg) fixed ;
+    background-size: cover ;
+}
+.marketing-Sara , .marketing-Lara {
+    width: 40% ;
+    float: left ;
+    padding: 120px 55px ;
+    letter-spacing: 1.5px ;
+    margin-left: 100px ;
+}
+.marketing-Sara  img , .marketing-Lara img {
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    float: left ;
+    margin-right: 15px ;
+}
+.marketing-name {
+    color: #fff ;
+    font-size: 30px ;
+    padding: 17px ;
+}
+.marketing-name-job {
+    color: rgb(211, 168, 168) ;
+    font-size: 20px ;
+}
+.marketing-name-info {
+    width: 500px ;
+    text-transform: capitalize ;
+    color: antiquewhite ;
+    padding-top: 20px ;
+}
+.team-main-title-line , .welcomeToWebsite-line , .news-main-title-line , .choose-main-title-line , .pricing-main-title-line {
+    margin-top: 8px ;
+}
+.team-container , .offer-container , .news-container {
+    width: 80% ;
+    margin: auto ;
+    margin-top: 80px ;
+}
+.team-item {
+    width: 30% ;
+    float: left ;
+    text-align: center ;
+    padding: 20px ;
+    background-color: rgb(219, 219, 219) ;
+    border-radius: 10px ;
+    position: relative ;
+}
+.team-item-2 {
+    margin: 0px 5% ;
+}
+.team-img img {
+    width: 100% ;
+    height: 200px ;
+}
+.team-img {
+    position: relative ;
+}
+.team-icon {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    bottom: 0 ;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    visibility: hidden ;
+}
+.team-item:hover .team-icon {
+    visibility: visible ;
+}
+.team-icon a {
+    display: block ;
+    height: 40px ;
+}
+.team-icon i {
+    width: 40px ;
+    color: rgb(255, 255, 255) ;
+    background-color: rgb(88, 88, 88) ;
+    line-height: 40px ;
+    margin-left: 285 ;
+}
+.team-info-name {
+    font-size: 25px ;
+    margin: 20px 0px  ;
+}
+.team-item:hover .team-info-name , .news-item:hover .news-item-job {
+    color: rgb(255, 255, 255) ; 
+}
+.team-info-work {
+    font-size: 15px ;
+    text-transform: uppercase ;
+    color: rgb(92, 92, 92) ;
+    margin-bottom: 20px ;
+}
+.team-item::after {
+    width: 100% ;
+    z-index: 2 ;
+}
+.news-container {
+    margin-top: 30px ;
+}
+.offer-container {
+    margin-top: 40px ;
+}
+.news-item {
+    width: 30% ;
+    float: left ;
+    text-align: center ;
+    border: 1px solid rgb(134, 114, 114) ;
+    border-radius: 10px ;
+    padding: 20px 10px ;
+    position: relative ;
+}
+.news-item-2 {
+    margin: 0px 5% ;
+}
+.news-item-img img {
+    width: 325px ;
+    height: 250px ;
+    border-radius: 10px ;
+}
+.news-item-links {
+    margin: 20px 18px ;
+    float: left ;
+}
+.news-item a , .news-item-name {
+    display: inline-block ;
+}
+.news-item a {
+    text-decoration: none ;
+    color: rgb(119, 99, 99) ;
+}
+.news-item-job {
+    font-size: 20px ;
+}
+.news-item-info {
+    margin: 20px 20px ;
+    color: rgb(73, 73, 73) ;
+}
+.news-more {
+    text-transform: capitalize ;
+    color: rgb(100, 80, 80) ;
+}
+.news-item::after {
+    width: 100% ;
+}
+.news-item:hover .news-item-info , .news-item:hover .news-item-links {
+    color: rgb(98, 85, 85);
+}
+.end {
+    height: 50vh ;
+    background-color: e3d5ca ;
+    text-align: center ;
+    padding: 23px ;
+}
+.end img {
+    width: 300px ;
+    height: 210px ;
+    margin: auto ;
+    display: block ;
+    border-radius: 10px ;
+}
+.end-icon {
+    margin: 25px ;
+}
+.end-icon a:hover{
+    background-color: rgb(115, 103, 103) ;
+}
+.end a {
+    font-size: 30px ;
+    color: #fff ;
+    background-color: rgb(151, 136, 136) ;
+    border-radius: 50% ;
+    padding: 13px ;
+    margin-top: 20px ;
+}
+.end-copy-right-p {
+    text-transform: uppercase ;
+    color: rgb(105, 105, 105) ;
+    font-size: 13px ;
+}
